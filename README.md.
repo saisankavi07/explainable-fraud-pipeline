@@ -1,0 +1,24 @@
+# Explainable Fraud Detection and Intelligent Alert Allocation Pipeline
+
+## Project Description
+This project identifies suspicious financial transactions using rule-based fraud detection and provides reasons for generating alerts.
+
+## Objectives
+- Identify unusual transactions.
+- Explain why a transaction is flagged.
+- Support future intelligent allocation of alerts to analysts.
+
+## Technology Used
+- Python
+- GitHub
+
+## Current Implementation
+The current program uses simple rules to identify suspicious transactions based on transaction amount, device information, and location.
+
+## Future Enhancements
+- CSV and Excel data processing
+- Machine learning using Naive Bayes
+- Schema drift detection
+- Explainable alerts
+- Analyst allocation using backtracking
+- Precision, recall, and fairness evaluation
