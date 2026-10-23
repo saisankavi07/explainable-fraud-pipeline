@@ -1,0 +1,34 @@
+
+# Explainable Fraud Detection System
+
+def detect_fraud(transaction):
+    reasons = []
+
+    amount = transaction["amount"]
+    average = transaction["avg_amount"]
+
+    if average > 0 and amount > 5 * average:
+        if transaction["new_device"]:
+            reasons.append("High amount and new device")
+
+    if transaction["unusual_location"]:
+        reasons.append("Unusual location")
+
+    print("Transaction ID:", transaction["txn_id"])
+
+    if reasons:
+        print("Status: Suspicious transaction")
+        print("Reasons:", ", ".join(reasons))
+    else:
+        print("Status: No suspicious rule triggered")
+
+
+transaction = {
+    "txn_id": "T1001",
+    "amount": 25000,
+    "avg_amount": 2000,
+    "new_device": True,
+    "unusual_location": True
+}
+
+detect_fraud(transaction)
