@@ -1,0 +1,6 @@
+
+txn_id,amount,avg_amount,new_device,unusual_location
+T1001,25000,2000,True,True
+T1002,1500,1800,False,False
+T1003,12000,1500,True,False
+T1004,500,1000,False,True
